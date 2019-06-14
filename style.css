@@ -4,18 +4,17 @@ body {
     font-family: Courier New;
 }
 
-.comment {
-    color: grey;
-    font-size: 0.8em;
-    margin: 10px;
-}
-
 .main {
     text-align: center;
 }
 
-.menu > a {
+div.menu {
+    margin-top: 20px;
+}
+
+.menu * {
     color: red;
     display: block;
+    margin: 5px;
     text-decoration: none;
 }
