@@ -16,6 +16,12 @@
                 <a href="https://www.deviantart.com/jorengarenarx">DeviantArt</a>
             </div>
         </div>
-        <footer>Copyright © 2019 Jorengarenar</footer>
+        <footer>
+            Copyright &copy; <span id="year">2019</span> Jorengarenar
+        </footer>
+        <script>
+            let currentYear = new Date().getFullYear();
+            document.getElementById("year").innerHTML = currentYear != 2019 ? "2019 - " + currentYear : "2019";
+        </script>
     </body>
 </html>
