@@ -1,0 +1,11 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: DejaVu Sans Mono;
+}
+
+.menu > a {
+    color: red;
+    display: block;
+    text-decoration: none;
+}
