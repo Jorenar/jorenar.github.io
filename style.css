@@ -1,22 +1,8 @@
-/* TAGS */
-
 body {
     background-color: #000000;
     color: #FFFFFF;
-    font-family: DejaVu Sans Mono;
+    font-family: Courier New;
 }
-
-footer {
-    bottom: 0;
-    font-size: 0.8em;
-    left: 0;
-    margin-bottom: 10px;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-}
-
-/* CLASSES */
 
 .comment {
     color: grey;
