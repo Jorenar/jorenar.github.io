@@ -1,23 +1,9 @@
+/* TAGS */
+
 body {
     background-color: #000000;
     color: #FFFFFF;
     font-family: DejaVu Sans Mono;
-}
-
-.main {
-    text-align: center;
-}
-
-.comment {
-    color: grey;
-    font-size: 0.8em;
-    margin: 10px;
-}
-
-.menu > a {
-    color: red;
-    display: block;
-    text-decoration: none;
 }
 
 footer {
@@ -28,4 +14,22 @@ footer {
     position: fixed;
     text-align: center;
     width: 100%;
+}
+
+/* CLASSES */
+
+.comment {
+    color: grey;
+    font-size: 0.8em;
+    margin: 10px;
+}
+
+.main {
+    text-align: center;
+}
+
+.menu > a {
+    color: red;
+    display: block;
+    text-decoration: none;
 }
