@@ -4,8 +4,22 @@ body {
     font-family: DejaVu Sans Mono;
 }
 
+.main {
+    text-align: center;
+}
+
 .menu > a {
     color: red;
     display: block;
     text-decoration: none;
+}
+
+footer {
+    bottom: 0;
+    font-size: 0.8em;
+    left: 0;
+    margin-bottom: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
 }
