@@ -1,0 +1,20 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Courier New;
+}
+
+.main {
+    text-align: center;
+}
+
+div.menu {
+    margin-top: 20px;
+}
+
+.menu * {
+    color: red;
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+}
