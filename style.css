@@ -9,7 +9,10 @@ body {
 }
 
 div.menu {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
+  width: min-content;
 }
 
 .menu * {
