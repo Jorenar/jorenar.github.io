@@ -4,6 +4,10 @@ body {
   font-family: Courier New;
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 .main {
   text-align: center;
 }
@@ -15,6 +19,7 @@ div.menu {
   margin-right: auto;
   margin-top: 20px;
   padding: 10px;
+  white-space: nowrap;
 }
 
 div.projects {
