@@ -2,52 +2,59 @@ body {
   background-color: #000000;
   color: #FFFFFF;
   font-family: Courier New;
+  text-align: center;
 }
 
 .nobr {
   white-space: nowrap;
 }
 
-.main {
-  text-align: center;
+#aboutMe {
+  margin-bottom: 2em;
 }
 
-div.menu {
-  border: 1px solid #333;
-  display: inline-table;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  padding: 10px;
-  white-space: nowrap;
+#myWorks > div {
+  text-align: initial;
 }
 
-div.projects {
-  display: inline-table;
+#myWorks > h1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  margin-top: 2em;
+  text-decoration: underline;
 }
 
-div.projects > div.menu {
-  display: block;
-}
-
-div#aboutMe a,
-.menu a {
+#aboutMe > a,
+.links > a,
+.menu > a
+{
   color: red;
   margin: 5px;
 }
 
-div#aboutMe a {
-  text-decoration: underline;
+.menu {
+  display: inline-table;
+  padding: 10px;
+  white-space: nowrap;
 }
 
-.menu a {
+.menu > a {
   display: block;
   text-decoration: none;
 }
 
-.menu h1 {
+.menu > h1 {
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 1em;
-  text-decoration: underline;
+}
+
+@media only screen and (max-device-width: 610px) {
+  #myWorks > div {
+    text-align: center;
+  }
+
+  div.menu {
+    display: initial;
+  }
 }
