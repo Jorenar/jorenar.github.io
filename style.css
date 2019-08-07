@@ -49,7 +49,7 @@ body {
   margin-bottom: 1em;
 }
 
-@media only screen and (max-device-width: 610px) {
+@media only screen and (max-device-width: 700px) {
   #myWorks > div {
     text-align: center;
   }
