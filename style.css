@@ -1,8 +1,11 @@
 body {
   background-color: #000000;
+  background: url("background.jpg");
   color: #FFFFFF;
   font-family: Courier New;
   text-align: center;
+
+  background-size: cover; /* This property has to be after "background" */
 }
 
 .nobr {
