@@ -70,5 +70,6 @@ body {
   body {
     background: url("background.jpg");
     background-size: cover; /* This property has to be after "background" */
+    background-repeat: no-repeat;
   }
 }
