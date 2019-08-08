@@ -49,6 +49,7 @@ body {
   margin-bottom: 1em;
 }
 
+/* Make site mobile scrolling-friendly */
 @media only screen and (max-device-width: 700px) {
   #myWorks > div {
     text-align: center;
@@ -56,5 +57,10 @@ body {
 
   div.menu {
     display: initial;
+  }
+
+  /* Every word in new line */
+  h1#myName {
+    word-spacing: 100vw;
   }
 }
