@@ -25,9 +25,6 @@ body {
 
 #myWorks {
   display: inline-block;
-}
-
-#myWorks > div {
   text-align: initial;
 }
 
@@ -38,18 +35,15 @@ body {
   text-decoration: underline;
 }
 
-.links > a {
+.links > a, .links > div > a {
   color: red;
   margin: 5px;
-}
-
-.links > div > a {
-  color: red;
 }
 
 .links > div > a:nth-of-type(2) {
   font-size: 0.8em;
   text-decoration: none;
+  margin: initial;
   vertical-align: middle;
 }
 
