@@ -9,8 +9,22 @@ body {
   white-space: nowrap;
 }
 
+#image {
+  margin-top: 2em;
+}
+
+#introduction {
+  vertical-align: top;
+  display: inline-block;
+}
+
 #aboutMe {
   margin-bottom: 2em;
+  margin-right: 3em;
+}
+
+#myWorks {
+  display: inline-block;
 }
 
 #myWorks > div {
@@ -24,22 +38,33 @@ body {
   text-decoration: underline;
 }
 
-#aboutMe > a,
-.links > a,
-.menu > a
-{
+.links > a {
   color: red;
   margin: 5px;
 }
 
+.links > div > a {
+  color: red;
+}
+
+.links > div > a:nth-of-type(2) {
+  font-size: 0.8em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
 .menu {
-  display: inline-table;
   padding: 10px;
   white-space: nowrap;
 }
 
 .menu > a {
+  text-decoration: none;
   display: block;
+}
+
+.menu > a.bar  {
+  display: initial;
   text-decoration: none;
 }
 
