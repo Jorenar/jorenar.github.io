@@ -16,11 +16,11 @@ body {
 #introduction {
   vertical-align: top;
   display: inline-block;
+  margin-right: 3em;
 }
 
 #aboutMe {
   margin-bottom: 2em;
-  margin-right: 3em;
 }
 
 #myWorks {
@@ -76,6 +76,10 @@ body {
 
 /* Make site mobile scrolling-friendly */
 @media only screen and (max-device-width: 700px) {
+  #introduction {
+    margin-right: 0em;
+  }
+
   #myWorks > div {
     text-align: center;
   }
