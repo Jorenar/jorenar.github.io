@@ -9,14 +9,19 @@ body {
   white-space: nowrap;
 }
 
-#image {
-  margin-top: 2em;
+.links > a, .links > div > a {
+  color: red;
+  margin: 5px;
 }
 
 #introduction {
   vertical-align: top;
   display: inline-block;
   margin-right: 3em;
+}
+
+#image {
+  margin-top: 2em;
 }
 
 #aboutMe {
@@ -35,21 +40,15 @@ body {
   text-decoration: underline;
 }
 
-.links > a, .links > div > a {
-  color: red;
-  margin: 5px;
-}
-
-.links > div > a:nth-of-type(2) {
-  font-size: 0.8em;
-  text-decoration: none;
-  margin: initial;
-  vertical-align: middle;
-}
-
 .menu {
   padding: 10px;
   white-space: nowrap;
+}
+
+.menu > h1 {
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
 .menu > a {
@@ -57,15 +56,15 @@ body {
   display: block;
 }
 
-.menu > a.bar  {
-  display: initial;
+.menu > div > a  {
   text-decoration: none;
 }
 
-.menu > h1 {
-  color: white;
-  font-size: 1.2em;
-  margin-bottom: 1em;
+.menu > div > a:nth-of-type(2) {
+  font-size: 0.8em;
+  text-decoration: none;
+  margin: initial;
+  vertical-align: middle;
 }
 
 /* Make site mobile scrolling-friendly */
