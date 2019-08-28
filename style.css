@@ -69,11 +69,12 @@ body {
 
 /* Make site mobile scrolling-friendly */
 @media only screen and (max-device-width: 700px) {
+
   #introduction {
     margin-right: 0em;
   }
 
-  #myWorks > div {
+  #myWorks {
     text-align: center;
   }
 
