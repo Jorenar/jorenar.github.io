@@ -1,6 +1,6 @@
 body {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #DDD;
   font-family: monospace;
   font-size: 1.5em;
   text-align: center;
@@ -11,7 +11,7 @@ body {
 }
 
 .links > a, .links > div > a {
-  color: red;
+  color: #F00;
   margin: 5px;
 }
 
@@ -47,7 +47,6 @@ body {
 }
 
 .menu > h1 {
-  color: white;
   font-size: 1.2em;
   margin-bottom: 1em;
 }
