@@ -94,7 +94,7 @@ tr, td, th {
 }
 
 /* Make site mobile scrolling-friendly */
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-device-width: 1300px) {
 
   body {
     font-size: 1.3em;
