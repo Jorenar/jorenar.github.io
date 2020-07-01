@@ -1,0 +1,36 @@
+.menu {
+  padding-bottom: 1em;
+  white-space: nowrap;
+}
+
+.menu > li {
+  margin-top: 0.2em;
+  padding-left: 1em;
+}
+
+.menu li > a:nth-of-type(2) {
+  font-size: 0.8em;
+  margin: initial;
+  vertical-align: middle;
+}
+
+.items > li {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 1.5em;
+  width: 5em;
+}
+
+.items > li > span {
+  display: flex;
+  font-size: 0.7em;
+  justify-content: center;
+  transform: translateY(150%);
+  transition: all 0.3s ease;
+}
+
+.items > li:hover > span {
+  transform: translateY(10%);
+}
+
+/* vim: set fen: */

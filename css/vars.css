@@ -1,0 +1,15 @@
+html, html[data-theme="dark"] {
+  --bg: #000;
+  --bg2: #FFF;
+  --color: #DDD;
+  --color2: #000;
+  --a-color: #9D959D;
+}
+
+html[data-theme="light"] {
+  --bg: #FFF;
+  --bg2: #000;
+  --color: #000;
+  --color2: #FFF;
+  --a-color: #333;
+}

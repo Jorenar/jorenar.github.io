@@ -4,57 +4,73 @@
   <meta charset="UTF-8">
   <title>Jorengarenar</title>
   <meta name="author" content="Jorengarenar">
-  <meta name="description" content="">
+  <meta name="description" content="Hi! I'm programmer">
   <meta name="keywords" content="jorengarenar,programmer,artist,gamer,joren">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" type="image/png" href="avatar.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.3/devicon.min.css">
+  <script src="scripts/theme.js"></script>
 </head>
-<body class="center">
-    <div id="introduction">
-      <div id="aboutMe">
-        <div id="image"><img style="max-width: 350px" src="avatar.png" alt="Jorengarenar"></div>
-        <h1 id="myName">Jakub "Jorengarenar" Łukasiewicz</h1>
-        <nav class="links">
-        </nav>
+<body>
+  <script page="" src="scripts/nav.js"></script>
+  <main>
+    <div id="about">
+      <img id="avatar" src="avatar.png" alt="Jorengarenar">
+      <h1 id="myName">Jakub "Jorengarenar" Łukasiewicz</h1>
+      <div id="social">
+        <nobr>
+        <a title="GitHub" href="https://github.com/Jorengarenar"><i class="fab fa-github"></i></a>
+        <a title="LinkedIn" href="https://www.linkedin.com/in/jakub-lukasiewicz"><i class="fab fa-linkedin-in"></i></a>
+        <a title="Twitter" href="https://twitter.com/Jorengarenar"><i class="fab fa-twitter"></i></a>
+        <a title="itch.io" href="https://jorengarenar.itch.io"><i class="fab fa-itch-io"></i></a>
+        </nobr>
+        <nobr>
+        <a title="DeviantArt" href="https://www.deviantart.com/jorengarenarx"><i class="fab fa-deviantart"></i></a>
+        <a title="Instagram" href="https://www.instagram.com/jorengarenar"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.reddit.com/user/Jorengarenar"><i class="fab fa-reddit"></i></a>
+        </nobr>
       </div>
-      <nav class="links" id="findMeOn">
-        <a href="https://github.com/Jorengarenar">GitHub</a>
-        <a href="https://greasyfork.org/en/users/309959-jorengarenar">Greasy Fork</a>
-        <a href="https://jorengarenar.itch.io">itch.io</a>
-        <br>
-        <a href="https://www.deviantart.com/jorengarenarx">DeviantArt</a>
-        <a href="https://www.instagram.com/jorengarenar">Instagram</a>
-        <br>
-        <a href="https://www.linkedin.com/in/jakub-lukasiewicz">LinkedIn</a>
-        <a href="https://twitter.com/Jorengarenar">Twitter</a>
-        <br>
-      </nav>
     </div>
-    <ul id="myWorks" title="MY WORKS">
-      <ul class="menu links" title="PROGRAMS">
+    <ul id="projects">
+      <ul class="menu" title="PROGRAMS">
         <li><a title="TUI hex editor" href="https://github.com/Jorengarenar/bVim">bVim</a></li>
         <li><a title="Dmenu Game Launcher" href="https://github.com/Jorengarenar/DGL">DGL</a></li>
       </ul>
-      <ul class="menu links" title="GAMES">
+      <ul class="menu" title="GAMES">
         <li><a href="https://github.com/Jorengarenar/js13kGames">js13kGames</a></li>
         <ul><li>
-          <a href="https://github.com/Jorengarenar/BackScratchingSalon">Back Scratching Salon</a>
-          <a href="https://joren.ga/BackScratchingSalon" target="_blank">(play online)</a>
-        </li></ul>
+            <a href="https://github.com/Jorengarenar/BackScratchingSalon">Back Scratching Salon</a>
+            <a href="https://joren.ga/BackScratchingSalon" target="_blank">(play online)</a>
+          </li></ul>
       </ul>
-      <ul class="menu links" title="VIM PLUGINS">
+      <ul class="menu" title="VIM PLUGINS">
         <li><a title="Support for clipboard" href="https://github.com/Jorengarenar/fauxClip">fauxClip</a></li>
         <li><a title="Minimal snippet plugin" href="https://github.com/Jorengarenar/miniSnip">miniSnip</a></li>
         <li><a title="Minimal plugin manager" href="https://github.com/Jorengarenar/minPlug">minPlug</a></li>
         <li><a title="Dark, monochromatic colorscheme" href="https://github.com/Jorengarenar/vim-darkness">vim-darkness</a></li>
       </ul>
-      <ul class="menu links" title="OTHER">
-        <li><a href="https://github.com/Jorengarenar/userscripts">Userscripts</a></li>
+      <ul class="menu" title="OTHER">
+        <li><a title="Userscripts" href="https://github.com/Jorengarenar/userscripts">Userscripts</a></li>
         <li><a title="UserCSS" href="https://github.com/Jorengarenar/userstyles">Userstyles</a></li>
         <li><a title="List of online resources" href="https://joren.ga/urlsList">URLs list</a></li>
         <li><a title="My configuration files" href="https://github.com/Jorengarenar/dotfiles">Dotfiles</a></li>
       </ul>
     </ul>
+    <ul id="skills" class="items">
+      <li> <i class="fa devicon-cplusplus-plain"></i> <span>C++</span>        </li>
+      <li> <i class="fa devicon-c-plain"></i>         <span>C</span>          </li>
+      <li> <i class="fab fa-git"></i>                 <span>Git</span>        </li>
+      <li> <i class="devicon-linux-plain"></i>        <span>Linux</span>      </li>
+      <li> <i class="fab fa-python"></i>              <span>Python</span>     </li>
+      <li> <i class="devicon-vim-plain"></i>          <span>Vim</span>        </li>
+      <li> <i class="fab fa-html5"></i>               <span>HTML</span>       </li>
+      <li> <i class="fab fa-js"></i>                  <span>JavaScript</span> </li>
+      <li> <i class="fab fa-css3"></i>                <span>CSS</span>        </li>
+    </ul>
+  </main>
 </body>
 </html>
+
+<!-- vim: set fen fdl=2: -->

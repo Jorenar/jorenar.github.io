@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1300px) {
+
+  body {
+    font-size: 1.3em;
+  }
+
+  #about {
+    margin-right: 0em;
+  }
+
+  #projects {
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  #projects, #projects ul, #projects li {
+    padding-left: initial;
+  }
+
+  #skills {
+    margin-top: 0;
+  }
+
+  /* Every word in new line */
+  h1#myName {
+    word-spacing: 100vw;
+  }
+
+  nav {
+    text-align: left;
+  }
+
+  nav a {
+    display: none;
+    margin-right: 2em;
+  }
+
+  nav #hamburger + label {
+    font-size: 0.8em;
+    display: initial;
+    color: var(--color2);
+  }
+
+  nav #hamburger:checked ~ a {
+    display: flex;
+  }
+
+  nav #hamburger:checked ~ a:nth-of-type(1) {
+    margin-top: 1em;
+  }
+
+}
+
+/* vim: set fen fdl=1: */

@@ -1,0 +1,74 @@
+body {
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+a {
+  color: var(--a-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul[title]::before {
+  content: attr(title);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+table {
+  border-collapse: collapse;
+  display: inline-table;
+}
+
+thead {
+  background-color: var(--bg2);
+}
+
+tr, td, th {
+  padding: 0.5em;
+  border: 1px solid var(--color);
+}
+
+nav {
+  padding: 0.5em;
+  background-color: var(--bg2);
+  font-size: 1.2em;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav > a {
+  padding: 0.5em;
+  color: var(--color2);
+}
+
+nav > a:hover {
+  background-color: var(--bg);
+}
+
+main {
+  margin-top: 5em;
+}
+
+article {
+  max-width: 80ch;
+  text-align: left;
+  margin: auto;
+}
+
+/* vim: set fen: */
