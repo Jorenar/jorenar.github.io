@@ -17,8 +17,10 @@ nav.innerHTML = `
 `;
 document.body.appendChild(nav);
 
-if (document.querySelector("html").dataset.theme == "light") {
-  document.querySelector("nav input").checked = true;
+window.onload = () => {
+  if (document.querySelector("html").dataset.theme == "light") {
+    document.querySelector("#toggleTheme input").checked = true;
+  }
 }
 
 let style = document.createElement("style");
