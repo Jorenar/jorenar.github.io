@@ -11,7 +11,7 @@ function toggleTheme() {
 }
 
 let x = localStorage.getItem("theme");
-if (x == "") {
+if (!x) {
   x = "dark";
 }
 document.querySelector("html").dataset.theme = x;
