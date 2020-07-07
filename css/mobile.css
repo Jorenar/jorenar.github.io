@@ -8,6 +8,10 @@
     margin-right: 0em;
   }
 
+#social nobr:not(:nth-of-type(1)) * {
+  margin-top: 0.5em;
+}
+
   #projects {
     margin-top: 2em;
     text-align: center;
