@@ -1,0 +1,33 @@
+main {
+  width: calc(3*15em + 10em);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  border: 1px solid white;
+  display: inline-grid;
+  width: 15em;
+  height: 10em;
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.box > :nth-child(1) {
+  font-size: 1.5em;
+}
+
+.box > :last-child {
+  margin-top: auto;
+  padding: 0.25em;
+  color: #FF7;
+}
+
+.box > :last-child:before {
+  content: "[";
+}
+
+.box > :last-child:after {
+  content: "]";
+}
