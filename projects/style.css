@@ -1,5 +1,5 @@
 main {
-  width: calc(3*15em + 10em);
+  max-width: calc(3*15em + 10em);
   margin-left: auto;
   margin-right: auto;
 }
