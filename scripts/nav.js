@@ -12,7 +12,7 @@ nav.innerHTML = `
   <a href="">HOME</a>
   <a href="about">ABOUT</a>
   <a href="projects">PROJECTS</a>
-  <a href="blog">BLOG</a>
+  <a href="https://blog.joren.ga">BLOG</a>
   <a href="mailto:jakublukasiewicz@o2.pl">CONTACT</a>
 `;
 document.body.appendChild(nav);
