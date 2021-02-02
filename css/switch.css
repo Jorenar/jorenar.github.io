@@ -53,5 +53,3 @@ input:checked + .slider:before {
   -ms-transform: translateX(1em);
   transform: translateX(1em);
 }
-
-/* vim: set fen: */

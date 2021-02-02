@@ -1,6 +1,116 @@
-@import url(vars.css);
-@import url(tags.css);
-@import url(class.css);
-@import url(id.css);
 @import url(switch.css);
 @import url(mobile.css);
+
+html, html[data-theme="dark"] {
+  --bg: #000;
+  --bg2: #FFF;
+  --color: #DDD;
+  --color2: #000;
+  --a-color: #9D959D;
+}
+
+html[data-theme="light"] {
+  --bg: #FFF;
+  --bg2: #000;
+  --color: #000;
+  --color2: #FFF;
+  --a-color: #333;
+}
+
+
+body {
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+main {
+  margin-top: 5em;
+  text-align: center;
+}
+
+article {
+  max-width: 80ch;
+  text-align: left;
+  margin: auto;
+}
+
+
+nav {
+  padding: 0.5em;
+  background-color: var(--bg2);
+  font-size: 1.2em;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav > a {
+  padding: 0.5em;
+  color: var(--color2);
+}
+
+nav > a:hover {
+  background-color: var(--bg);
+}
+
+
+a {
+  color: var(--a-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color);
+}
+
+
+#avatar {
+  max-width: 18em;
+}
+
+#social a {
+  font-size: 1.5em;
+  margin: 0.6em;
+}
+
+#skills {
+  padding: 0.5em;
+  padding-top: 2em;
+  margin-top: 5em;
+}
+
+
+.items li {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 1.5em;
+  width: 5em;
+}
+
+.items li > span {
+  display: flex;
+  font-size: 0.7em;
+  justify-content: center;
+  transform: translateY(150%);
+  transition: all 0.3s ease;
+}
+
+.items li:hover > span {
+  transform: translateY(10%);
+}
+
+
+#toggleTheme {
+  margin-right: 2em;
+  float: right;
+  font-size: 0.8em;
+}
+
+#hamburger, #hamburger + label {
+  display: none;
+}

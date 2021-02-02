@@ -1,37 +1,20 @@
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 700px) {
 
   body {
     font-size: 1.3em;
-  }
-
-  #about {
-    margin-right: 0em;
   }
 
 #social nobr:not(:nth-of-type(1)) * {
   margin-top: 0.5em;
 }
 
-  #projects {
-    margin-top: 2em;
-    text-align: center;
-  }
-
-  #projects, #projects ul, #projects li {
-    padding-left: initial;
-  }
-
   #skills {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 
-  /* Every word in new line */
-  h1#myName {
-    word-spacing: 100vw;
-  }
 
   nav {
-    text-align: left;
+    text-align: left !important;
   }
 
   nav a {
@@ -54,5 +37,3 @@
   }
 
 }
-
-/* vim: set fen fdl=1: */
