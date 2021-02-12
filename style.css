@@ -1,0 +1,79 @@
+:root {
+  --bg: #000;
+  --color: #DDD;
+  --a-color: #9D959D;
+}
+
+
+body {
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: monospace;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+main {
+  margin-top: 2em;
+  text-align: center;
+}
+
+article {
+  max-width: 80ch;
+  text-align: left;
+  margin: auto;
+}
+
+
+nav {
+  background-color: var(--bg);
+  padding: 0.5em 0;
+  font-size: 1.2em;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav > a {
+  margin: 0.5em;
+}
+
+
+a {
+  color: var(--a-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color);
+}
+
+
+#avatar {
+  max-width: 18em;
+  background-color: #fff;
+}
+
+#social a {
+  font-size: 1.5em;
+  margin: 0.6em;
+}
+
+
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 1.3em;
+  }
+
+  nav {
+    position: initial;
+  }
+
+  #social nobr:not(:nth-of-type(1)) * {
+    margin-top: 0.5em;
+  }
+}

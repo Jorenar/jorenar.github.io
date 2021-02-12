@@ -64,7 +64,8 @@
        stroke="none"
        fill="#050505"
        fill-rule="evenodd"
-       sodipodi:nodetypes="cccccscccccccccccccccccccccccccccsccccccccccccccccccccccsccccccccccccccccccssccsccccscccccscsccscc" />
+       sodipodi:nodetypes="cccccscccccccccccccccccccccccccccsccccccccccccccccccccccsccccccccccccccccccssccsccccscccccscsccscc"
+       style="fill:#000000" />
     <path
        id="rect211-7"
        style="display:inline;opacity:1;fill:#ffffff"
