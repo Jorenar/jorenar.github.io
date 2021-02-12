@@ -33,12 +33,10 @@ nav {
   position: sticky;
   top: 0;
 
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
-nav > a {
+nav a {
   margin: 0.5em;
 }
 
@@ -71,9 +69,5 @@ a:hover {
 
   nav {
     position: initial;
-  }
-
-  #social nobr:not(:nth-of-type(1)) * {
-    margin-top: 0.5em;
   }
 }
