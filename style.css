@@ -62,16 +62,29 @@ a:hover {
 
 #social {
   display: inline-block;
-  max-width: 35em;
 }
 
 #social > div {
   margin-bottom: 1em;
 }
 
+#social .grid {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 #social a {
   font-size: 1.5em;
   margin: 0.6em;
+}
+
+#social img {
+  width: 1.7em;
+  filter: grayscale(1) brightness(0.8);
+}
+
+#social img:hover {
+  filter: grayscale(1);
 }
 
 
