@@ -40,6 +40,10 @@ nav a {
   margin: 0.5em;
 }
 
+nav a[data-current] {
+  color: var(--color);
+}
+
 
 a {
   color: var(--a-color);
@@ -54,6 +58,15 @@ a:hover {
 #avatar {
   max-width: 18em;
   background-color: #fff;
+}
+
+#social {
+  display: inline-block;
+  max-width: 35em;
+}
+
+#social > div {
+  margin-bottom: 1em;
 }
 
 #social a {
