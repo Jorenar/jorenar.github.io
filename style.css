@@ -80,7 +80,7 @@ a:hover {
 
 #social img {
   width: 1.7em;
-  filter: grayscale(1) brightness(0.8);
+  filter: grayscale(1) brightness(0.7);
 }
 
 #social img:hover {
