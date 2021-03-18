@@ -15,6 +15,9 @@ body {
 
 main {
   margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: max-content;
   text-align: center;
 }
 
@@ -78,13 +81,38 @@ a:hover {
   margin: 0.6em;
 }
 
-#social img {
+
+#social a[title="AniList"] img {
   width: 1.7em;
   filter: grayscale(1) brightness(0.7);
 }
 
-#social img:hover {
+#social a[title="AniList"] img:hover {
   filter: grayscale(1);
+}
+
+
+#social a[title="Chess.com"] img {
+  height: 1.55em;
+  margin-top: 0.1em;
+  filter: invert(1) brightness(0.6);
+}
+
+#social a[title="Chess.com"]:hover {
+  filter: brightness(2.5);
+}
+
+
+#faq {
+  text-align: left;
+}
+
+#faq details {
+  margin-top: 1em;
+}
+
+#faq details p {
+  margin-left: 2em;
 }
 
 
