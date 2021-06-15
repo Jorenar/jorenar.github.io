@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://jorengarenar.github.io</loc>
+        <loc>https://joren.ga</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://jorengarenar.github.io/blog</loc>
+        <loc>https://blog.joren.ga</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://jorengarenar.github.io/projects</loc>
+        <loc>https://joren.ga/projects</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://jorengarenar.github.io/faq</loc>
+        <loc>https://joren.ga/faq</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://jorengarenar.github.io/resources</loc>
+        <loc>https://joren.ga/resources</loc>
         <priority>0.60</priority>
     </url>
 </urlset>

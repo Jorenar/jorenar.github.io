@@ -1,1 +1,1 @@
- Sitemap: http://jorengarenar.github.io/sitemap.xml
+ Sitemap: http://joren.ga/sitemap.xml
