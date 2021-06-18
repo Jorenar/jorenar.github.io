@@ -105,13 +105,20 @@ a:hover {
 
 #faq {
   text-align: left;
+  max-width: 80ch;
 }
 
 #faq details {
   margin-top: 1em;
 }
 
-#faq details p {
+#faq summary {
+  cursor: pointer;
+  max-width: max-content;
+}
+
+#faq details div {
+  margin-top: 1em;
   margin-left: 2em;
 }
 
@@ -123,5 +130,9 @@ a:hover {
 
   nav {
     position: initial;
+  }
+
+  #faq {
+    margin: 0 10px;
   }
 }
