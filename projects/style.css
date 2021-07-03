@@ -5,7 +5,7 @@ main {
 }
 
 .box {
-  border: 1px solid white;
+  border: 1px solid #222;
   display: inline-grid;
   width: 15em;
   height: 10em;
@@ -21,7 +21,7 @@ main {
 .box > :last-child {
   margin-top: auto;
   padding: 0.25em;
-  color: #FF7;
+  color: #9B9B7D;
 }
 
 .box > :last-child:before {
