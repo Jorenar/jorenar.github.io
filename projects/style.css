@@ -63,20 +63,40 @@ details .desc {
 }
 
 details .tech {
-  position: absolute;
-  top: 1em;
-  right: 1em;
   color: #888;
+  display: flex;
+  position: absolute;
+  right: 5px;
+  top: 10px;
 }
 
-details .tech::before {
-  content: "[";
+details .tech > * {
+  margin: 0 5px;
 }
 
-details .tech::after {
-  content: "]";
+details .tech > *:hover {
+  cursor: help;
+}
+
+details .tech img.icon {
+  filter: grayscale(1);
 }
 
 details:last-of-type {
   margin-bottom: 15em;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .tech {
+    display: none;
+  }
+
+  .desc {
+    margin-right: 1em;
+  }
+
+  details > * + summary::after {
+    font-size: 0.8em;
+  }
 }
