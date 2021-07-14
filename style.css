@@ -1,7 +1,7 @@
 :root {
   --bg: #000;
-  --color: #DDD;
-  --a-color: #9D959D;
+  --color: #ddd;
+  --a-color: #9d959d;
 }
 
 
@@ -28,16 +28,23 @@ article {
 }
 
 
+a {
+  color: var(--a-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color);
+}
+
+
 nav {
   background-color: var(--bg);
-  padding: 0.5em 0;
   font-size: 1.2em;
-
+  padding: 0.5em 0;
   position: sticky;
-  top: 0;
-
   text-align: center;
-
+  top: 0;
   z-index: 10;
 }
 
@@ -50,19 +57,9 @@ nav a[data-current] {
 }
 
 
-a {
-  color: var(--a-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--color);
-}
-
-
 #avatar {
-  max-width: 18em;
   background-color: #fff;
+  max-width: 18em;
 }
 
 #social {
@@ -85,8 +82,8 @@ a:hover {
 
 
 #social a[title="AniList"] img {
-  width: 1.7em;
   filter: grayscale(1) brightness(0.7);
+  width: 1.7em;
 }
 
 #social a[title="AniList"] img:hover {
@@ -94,20 +91,9 @@ a:hover {
 }
 
 
-#social a[title="Chess.com"] img {
-  height: 1.55em;
-  margin-top: 0.1em;
-  filter: invert(1) brightness(0.6);
-}
-
-#social a[title="Chess.com"]:hover {
-  filter: brightness(2.5);
-}
-
-
 #faq {
-  text-align: left;
   max-width: 80ch;
+  text-align: left;
 }
 
 #faq details {
@@ -120,8 +106,8 @@ a:hover {
 }
 
 #faq details div {
-  margin-top: 1em;
   margin-left: 2em;
+  margin-top: 1em;
 }
 
 

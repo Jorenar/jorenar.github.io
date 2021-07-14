@@ -59,7 +59,7 @@ details .desc {
   margin-left: 1em;
   margin-top: 0.5em;
   font-style: italic;
-  color: #AAA;
+  color: #aaa;
 }
 
 details .tech {
@@ -69,11 +69,11 @@ details .tech {
   color: #888;
 }
 
-details .tech:before {
+details .tech::before {
   content: "[";
 }
 
-details .tech:after {
+details .tech::after {
   content: "]";
 }
 
