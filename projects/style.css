@@ -74,12 +74,16 @@ details .tech > * {
   margin: 0 5px;
 }
 
-details .tech > *:hover {
-  cursor: help;
+details .tech > :is(img, svg) {
+  height: 1.3em;
 }
 
-details .tech img.icon {
-  filter: grayscale(1);
+details .tech > svg {
+  width: 1.3em;
+}
+
+details .tech > *:hover {
+  cursor: help;
 }
 
 details:last-of-type {

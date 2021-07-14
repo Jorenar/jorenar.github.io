@@ -22,7 +22,7 @@ let projects = {
     },
     "cobBF": {
       "url":  "https://github.com/Jorengarenar/cobBF",
-      "desc": `Simple Brainfuck interpreter`,
+      "desc": `Simple Brainfuck interpreter written in COBOL`,
       "tech": [ "COBOL" ]
     },
     "h2-dmenu-desktop": {
@@ -137,7 +137,7 @@ let projects = {
     "Reddit Old Redesigned Dark": {
       "url":  "https://github.com/Jorengarenar/RedditOldRedesignedDark",
       "desc": `Dark style for Old Reddit`,
-      "tech": [ "CSS", "Less" ]
+      "tech": [ "Less", "CSS" ]
     },
     "Better Markdown for Old Reddit": {
       "url":  "https://greasyfork.org/en/scripts/429319",

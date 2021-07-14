@@ -1,15 +1,11 @@
-let icons = {
-  "C":      `<i   title="C"          class="devicon-c-plain"></i>`,
-  "C++":    `<i   title="C++"        class="devicon-cplusplus-plain"></i>`,
-  "CSS":    `<i   title="CSS"        class="devicon-css3-plain"></i>`,
-  "HTML":   `<i   title="HTML"       class="devicon-html5-plain"></i>`,
-  "JS":     `<i   title="JavaScript" class="devicon-javascript-plain"></i>`,
-  "Less":   `<i   title="Less"       class="devicon-less-plain-wordmark"></i>`,
-  "PHP":    `<i   title="PHP"        class="devicon-php-plain"></i>`,
-  "Python": `<i   title="Python"     class="devicon-python-plain"></i>`,
-  "Shell":  `<i   title="Shell"      class="devicon-bash-plain"></i>`,
-  "SQLite": `<img title="SQLite"     class="icon" alt="SQLite" height="25em" src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg">`,
-  "Vim":    `<i   title="Vim"        class="devicon-vim-plain"></i>`,
+let svgIcons = [
+  "C", "C++", "COBOL",
+  "CSS", "HTML", "Less", "JS", "PHP",
+  "Python", "Shell", "SQLite", "Vim"
+];
+
+let imgIcons = {
+  "Jekyll": "https://jekyllrb.com/img/logo-2x.png",
 };
 
 let main = document.querySelector("main");
@@ -45,8 +41,13 @@ Object.keys(projects).forEach((type) => {
 
     if (proj.hasOwnProperty("tech")) {
       proj.tech.forEach((t) => {
-        if (icons.hasOwnProperty(t)) {
-          tech.innerHTML += icons[t];
+        if (svgIcons.indexOf(t) != -1) {
+          tech.innerHTML += `<svg><use href="projects/icons.svg#${t}" /></svg>`;
+        } else if (imgIcons.hasOwnProperty(t)) {
+          let img = document.createElement("img");
+          img.src = imgIcons[t];
+          img.title = t;
+          tech.appendChild(img);
         } else {
           let span = document.createElement("span");
           span.innerText = t;
