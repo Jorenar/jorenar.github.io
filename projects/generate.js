@@ -41,7 +41,7 @@ Object.keys(projects).forEach((type) => {
 
     if (proj.hasOwnProperty("tech")) {
       proj.tech.forEach((t) => {
-        if (svgIcons.indexOf(t) != -1) {
+        if (svgIcons.indexOf(t) !== -1) {
           tech.innerHTML += `<svg><use href="projects/icons.svg#${t}" /></svg>`;
         } else if (imgIcons.hasOwnProperty(t)) {
           let img = document.createElement("img");
