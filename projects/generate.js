@@ -1,7 +1,7 @@
 let svgIcons = [
   "C", "C++", "CMake", "COBOL",
   "CSS", "HTML", "Less", "JS", "PHP",
-  "Python", "Shell", "SQLite", "Vim"
+  "Python", "Shell", "SQLite", "Vim",
 ];
 
 let imgIcons = {
@@ -11,59 +11,55 @@ let imgIcons = {
 let main = document.querySelector("main");
 
 Object.keys(projects).forEach((type) => {
-  let h1 = document.createElement("h1");
-  h1.innerText = type;
-  main.appendChild(h1);
+  main.appendChild(document.createElement("h1")).innerText = type;
 
-  Object.keys(projects[type]).forEach((n) => {
-    let proj = projects[type][n];
+  const { [type]: proj } = projects;
 
+  Object.keys(proj).forEach((n) => {
+
+    const { [n]: { url, desc, tech, long } } = proj;
     let summary = document.createElement("summary");
 
-    if (proj.url) {
-      var name = document.createElement("a");
-    name.href = proj.url;
-    } else {
-      var name = document.createElement("span");
-    }
+    let name = document.createElement(url ? "a" : "span");
     name.className = "name";
     name.innerText = n;
+    name.href = url;
     summary.appendChild(name);
 
-    if (proj.hasOwnProperty("tech")) {
-      let tech = document.createElement("div");
-      tech.className = "tech";
+    if (tech) {
+      let techDiv = document.createElement("div");
+      techDiv.className = "tech";
 
-      proj.tech.forEach((t) => {
-        if (svgIcons.indexOf(t) !== -1) {
-          tech.innerHTML += `<svg><use href="projects/icons.svg#${t}" /></svg>`;
+      tech.forEach((t) => {
+        if (svgIcons.includes(t)) {
+          techDiv.innerHTML += `<svg><use href="projects/icons.svg#${t}" /></svg>`;
         } else if (imgIcons.hasOwnProperty(t)) {
           let img = document.createElement("img");
-          img.src = imgIcons[t];
+          ({ [t]: img.src } = imgIcons);
           img.title = t;
-          tech.appendChild(img);
+          techDiv.appendChild(img);
         } else {
           let span = document.createElement("span");
           span.innerText = t;
-          tech.appendChild(span);
+          techDiv.appendChild(span);
         }
       });
-      summary.appendChild(tech);
+      summary.appendChild(techDiv);
     }
 
-    if (proj.hasOwnProperty("desc")) {
-      let desc = document.createElement("div");
-      desc.className = "desc";
-      desc.innerHTML = proj.desc;
-      summary.appendChild(desc);
+    if (desc) {
+      let descDiv = document.createElement("div");
+      descDiv.className = "desc";
+      descDiv.innerHTML = desc;
+      summary.appendChild(descDiv);
     }
 
     let details = document.createElement("details");
-    if (proj.hasOwnProperty("long")) {
-      details.innerHTML = proj.long;
+    if (long) {
+      details.innerHTML = long;
     }
-    details.appendChild(summary);
-    main.appendChild(details);
+
+    main.appendChild(details).appendChild(summary);
 
   });
 
