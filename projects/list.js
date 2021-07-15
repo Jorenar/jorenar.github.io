@@ -43,6 +43,11 @@ let projects = {
       "desc": `An implementation of XDG Base Directory Specification`,
       "tech": [ "C" ]
     },
+    "CMake-BoostTestHelper": {
+      "url":  "https://github.com/Jorengarenar/CMake-BoostTestHelper",
+      "desc": `Parses given source files and adds found unit test to be tested by CTest`,
+      "tech": [ "CMake" ]
+    },
     "CMObALL": {
       "url":  "https://github.com/Jorengarenar/CMObALL",
       "desc": `C Macro Overloading by Argument List Length`,

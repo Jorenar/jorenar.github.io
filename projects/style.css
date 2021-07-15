@@ -83,7 +83,7 @@ details .tech > svg {
 }
 
 details .tech > *:hover {
-  cursor: help;
+  cursor: context-menu;
 }
 
 details:last-of-type {

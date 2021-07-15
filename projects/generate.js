@@ -1,5 +1,5 @@
 let svgIcons = [
-  "C", "C++", "COBOL",
+  "C", "C++", "CMake", "COBOL",
   "CSS", "HTML", "Less", "JS", "PHP",
   "Python", "Shell", "SQLite", "Vim"
 ];
