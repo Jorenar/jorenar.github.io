@@ -10,6 +10,22 @@ h1 {
 }
 
 
+details {
+  border: 1px solid #222;
+  margin-bottom: 0.5em;
+  text-align: left;
+  width: 100%;
+}
+
+details:last-of-type {
+  margin-bottom: 15em;
+}
+
+details a {
+  color: #85a0adcc;
+}
+
+
 details[open] > :not(summary) {
   display: flex;
   margin: 1em auto;
@@ -20,6 +36,8 @@ summary {
   padding: 0.7em;
   list-style: none;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 details[open] > * + summary {
@@ -39,67 +57,42 @@ details[open] > * + summary::after {
 }
 
 
-details {
-  border: 1px solid #222;
-  margin-bottom: 0.5em;
-  text-align: left;
-  width: 100%;
-}
-
-details .name {
-  display: block;
+.name {
+  color: #bbb;
   font-size: 1.5em;
 }
 
-details .name:hover {
+.name:hover {
+  color: #eee;
+  cursor: pointer;
   font-weight: bold;
 }
 
-details .desc {
+.desc {
+  color: #999;
+  flex-basis: 100%;
+  font-style: italic;
   margin-left: 1em;
   margin-top: 0.5em;
-  font-style: italic;
-  color: #aaa;
 }
 
-details .tech {
+.tech {
   color: #888;
   display: flex;
-  position: absolute;
-  right: 5px;
-  top: 10px;
+  margin-left: auto;
 }
 
-details .tech > * {
-  margin: 0 5px;
-}
-
-details .tech > :is(img, svg) {
+.tech > * {
+  margin-left: 5px;
   height: 1.3em;
 }
 
-details .tech > svg {
+.tech > svg {
   width: 1.3em;
-}
-
-details .tech > *:hover {
-  cursor: context-menu;
-}
-
-details:last-of-type {
-  margin-bottom: 15em;
 }
 
 
 @media only screen and (max-width: 700px) {
-  .tech {
-    display: none;
-  }
-
-  .desc {
-    margin-right: 1em;
-  }
-
   details > * + summary::after {
     font-size: 0.8em;
   }

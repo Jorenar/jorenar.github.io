@@ -18,28 +18,22 @@ Object.keys(projects).forEach((type) => {
   Object.keys(projects[type]).forEach((n) => {
     let proj = projects[type][n];
 
-    let details = document.createElement("details");
-    if (proj.hasOwnProperty("long")) {
-      details.innerHTML = proj.long;
-    }
+    let summary = document.createElement("summary");
 
-
-    let name = document.createElement("a");
-    let desc = document.createElement("div");
-    let tech = document.createElement("div");
-
-    name.className = "name";
-    desc.className = "desc";
-    tech.className = "tech";
-
-    name.innerText = n;
-    if (proj.hasOwnProperty("desc")) {
-      desc.innerHTML = proj.desc;
-    }
-
+    if (proj.url) {
+      var name = document.createElement("a");
     name.href = proj.url;
+    } else {
+      var name = document.createElement("span");
+    }
+    name.className = "name";
+    name.innerText = n;
+    summary.appendChild(name);
 
     if (proj.hasOwnProperty("tech")) {
+      let tech = document.createElement("div");
+      tech.className = "tech";
+
       proj.tech.forEach((t) => {
         if (svgIcons.indexOf(t) !== -1) {
           tech.innerHTML += `<svg><use href="projects/icons.svg#${t}" /></svg>`;
@@ -54,11 +48,20 @@ Object.keys(projects).forEach((type) => {
           tech.appendChild(span);
         }
       });
+      summary.appendChild(tech);
     }
 
-    let summary = document.createElement("summary");
-    summary.append(name, desc, tech);
+    if (proj.hasOwnProperty("desc")) {
+      let desc = document.createElement("div");
+      desc.className = "desc";
+      desc.innerHTML = proj.desc;
+      summary.appendChild(desc);
+    }
 
+    let details = document.createElement("details");
+    if (proj.hasOwnProperty("long")) {
+      details.innerHTML = proj.long;
+    }
     details.appendChild(summary);
     main.appendChild(details);
 

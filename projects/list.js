@@ -127,7 +127,7 @@ let projects = {
       "tech": [ "JS", "SQLite" ]
     },
     "decori.net.pl": {
-      "url":  "projects/screenshot_DeCORI.png",
+      "url":  "",
       "desc": `Website for the <a href="https://decori.net.pl">DeCORI</a>&nbsp;company`,
       "tech": [ "PHP", "HTML", "CSS", "JS" ],
       "long": `<img src="projects/screenshot_DeCORI.png">`,
