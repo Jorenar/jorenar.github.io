@@ -30,6 +30,11 @@ let projects = {
       "desc": `More convenient backups for QuiteRSS`,
       "tech": [ "Shell" ],
     },
+    "Workshop Manager 2000": {
+      "url":  "https://github.com/Jorengarenar/WorkshopManager2000",
+      "desc": "Management program for electronic workshop",
+      "tech": [ "C++", "SQLite" ],
+    },
   },
   "Games": {
     "Back Scratching Salon": {
