@@ -12,6 +12,7 @@ let projects = {
     },
     "h2-dmenu-desktop": {
       "url":  "https://github.com/Jorengarenar/h2-dmenu-desktop",
+      "desc": `Simplified version of <a href="https://github.com/i3/i3/blob/next/i3-dmenu-desktop">i3-dmenu-desktop</a>`,
       "tech": [ "Python" ],
     },
     "cobBF": {
@@ -45,7 +46,7 @@ let projects = {
     },
     "CMake-BoostTestHelper": {
       "url":  "https://github.com/Jorengarenar/CMake-BoostTestHelper",
-      "desc": `Parses given source files and adds found unit test to be tested by CTest`,
+      "desc": `Parses given source files and adds found unit tests to be run by CTest`,
       "tech": [ "CMake" ],
     },
     "CMObALL": {
@@ -60,6 +61,7 @@ let projects = {
     },
     "ANSI_Esc_Seq": {
       "url":  "https://github.com/Jorengarenar/ANSI_Esc_Seq",
+      "desc": `Macros for <a href="https://web.archive.org/web/20210226122732/https://www.ascii-table.com/ansi-escape-sequences.php">ANSI Escape codes</a>`,
       "tech": [ "C" ],
     },
   },
@@ -124,7 +126,7 @@ let projects = {
     "Resources list by Jorengarenar": {
       "url":  "https://resources.joren.ga",
       "desc": `Links to various resources and tools I've found on the Internet`,
-      "tech": [ "JS", "SQLite" ],
+      "tech": [ "SQLite", "JS", "HTML", "CSS" ],
     },
     "decori.net.pl": {
       "url":  "",
@@ -146,7 +148,7 @@ let projects = {
     },
     "Better Markdown for Old Reddit": {
       "url":  "https://greasyfork.org/en/scripts/429319",
-      "desc": `Replace Markdown renderer on Old Reddit with Marked`,
+      "desc": `Replace Markdown renderer on Old Reddit with <a href="https://marked.js.org">Marked</a>`,
       "tech": [ "JS" ],
     },
     "AniChart - Show only anime from your AniList": {
