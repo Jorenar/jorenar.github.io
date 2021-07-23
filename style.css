@@ -1,45 +1,37 @@
 :root {
-  --bg: #000;
-  --color: #ddd;
-  --a-color: #9d959d;
+  --color: #b5b5b5;
+  --color2: #9d959d;
 }
 
-
 body {
-  background-color: var(--bg);
+  background-color: #000;
   color: var(--color);
   font-family: monospace;
   font-size: 1.5em;
-  margin: 0;
 }
 
 main {
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: max-content;
+  margin: 2em auto 10em auto;
+  max-width: 90ch;
   text-align: center;
 }
 
 article {
   max-width: 80ch;
   text-align: left;
-  margin: auto;
 }
 
-
 a {
-  color: var(--a-color);
+  color: var(--color2);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color);
+  color: #fff;
 }
 
-
 nav {
-  background-color: var(--bg);
+  background-color: #000;
   font-size: 1.2em;
   padding: 0.5em 0;
   position: sticky;
@@ -56,43 +48,21 @@ nav a[data-current] {
   color: var(--color);
 }
 
-
 #avatar {
   background-color: #fff;
   max-width: 18em;
-}
-
-#social {
-  display: inline-block;
 }
 
 #social > div {
   margin-bottom: 1em;
 }
 
-#social .grid {
-  display: inline-grid;
-  grid-template-columns: repeat(4, 1fr);
+#social > div > a {
+  font-size: 1.2em;
+  margin: 0.5em;
 }
-
-#social a {
-  font-size: 1.5em;
-  margin: 0.6em;
-}
-
-
-#social a[title="AniList"] img {
-  filter: grayscale(1) brightness(0.7);
-  width: 1.7em;
-}
-
-#social a[title="AniList"] img:hover {
-  filter: grayscale(1);
-}
-
 
 #faq {
-  max-width: 80ch;
   text-align: left;
 }
 
@@ -110,17 +80,8 @@ nav a[data-current] {
   margin-top: 1em;
 }
 
-
 @media only screen and (max-width: 700px) {
   body {
     font-size: 1.3em;
-  }
-
-  nav {
-    position: initial;
-  }
-
-  #faq {
-    margin: 0 10px;
   }
 }
