@@ -5,13 +5,6 @@ body {
   font-size: 18px;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #eee;
-    color: #111;
-  }
-}
-
 main {
   margin: 2em auto 10em auto;
   max-width: 90ch;
