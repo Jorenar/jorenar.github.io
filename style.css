@@ -3,14 +3,9 @@
   src: url(ToshibaSat.woff);
 }
 
-:root {
-  --color: #b5b5b5;
-  --color2: #9d959d;
-}
-
 body {
   background-color: #000;
-  color: var(--color);
+  color: #aaa;
   font-family: ToshibaSat, Courier, monospace;
   font-size: 18px;
 }
@@ -27,16 +22,17 @@ article {
 }
 
 a {
-  color: var(--color2);
-  text-decoration: none;
+  color: inherit;
+  text-underline-offset: 3px;
+  text-decoration-style: dotted;
 }
 
 a:hover {
-  color: #fff;
+  text-decoration-style: solid;
 }
 
 nav {
-  background-color: #000;
+  background-color: inherit;
   font-size: 1.2em;
   padding: 0.5em 0;
   position: sticky;
@@ -50,7 +46,7 @@ nav a {
 }
 
 nav a[data-current] {
-  color: var(--color);
+  text-decoration-style: solid;
 }
 
 #avatar {
@@ -71,16 +67,15 @@ nav a[data-current] {
   text-align: left;
 }
 
+#faq summary {
+  cursor: pointer;
+}
+
 #faq details {
   margin-top: 1em;
 }
 
-#faq summary {
-  cursor: pointer;
-  max-width: max-content;
-}
-
-#faq details div {
+#faq details > div {
   margin-left: 2em;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }

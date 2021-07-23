@@ -8,10 +8,6 @@ details {
   text-align: left;
 }
 
-details a {
-  color: #98abb5;
-}
-
 details[open] > :not(summary) {
   display: flex;
   margin: 1em auto;
@@ -38,23 +34,22 @@ details > * + summary::after {
 }
 
 details[open] > * + summary::after {
-  content: "[–]";
+  content: "[-]";
 }
 
 .name {
-  color: var(--color2);
   font-size: 1.5em;
 }
 
 .desc {
-  color: #999;
+  filter: brightness(0.9);
   flex-basis: 100%;
   font-style: italic;
   margin: 0.5em 2em 0 1em;
 }
 
 .tech {
-  color: #888;
+  filter: brightness(0.8);
   font-size: 0.9em;
   margin-left: auto;
 }
