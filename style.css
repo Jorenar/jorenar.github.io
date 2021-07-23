@@ -1,5 +1,5 @@
 body {
-  background-color: #0b0b0b;
+  background-color: #151518;
   color: #ccc;
   font-family: DejaVu Serif, serif;
   font-size: 18px;
@@ -30,7 +30,7 @@ a:hover {
 
 nav {
   font-size: 1.2em;
-  padding: 0.5em 0;
+  margin-top: 1em;
   text-align: center;
 }
 
@@ -53,21 +53,4 @@ nav a[data-current] {
 #social > div > a {
   font-size: 1.2em;
   margin: 0.5em;
-}
-
-#faq {
-  text-align: left;
-}
-
-#faq summary {
-  cursor: pointer;
-}
-
-#faq details {
-  margin-top: 1em;
-}
-
-#faq details > div {
-  margin-left: 2em;
-  margin-top: 0.5em;
 }
