@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ToshibaSat;
+  src: url(ToshibaSat.woff);
+}
+
 :root {
   --color: #b5b5b5;
   --color2: #9d959d;
@@ -6,8 +11,8 @@
 body {
   background-color: #000;
   color: var(--color);
-  font-family: monospace;
-  font-size: 1.5em;
+  font-family: ToshibaSat, Courier, monospace;
+  font-size: 18px;
 }
 
 main {
@@ -78,10 +83,4 @@ nav a[data-current] {
 #faq details div {
   margin-left: 2em;
   margin-top: 1em;
-}
-
-@media only screen and (max-width: 700px) {
-  body {
-    font-size: 1.3em;
-  }
 }
