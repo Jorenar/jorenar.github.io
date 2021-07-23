@@ -9,7 +9,7 @@ details {
 }
 
 details a {
-  color: #85a0adcc;
+  color: #98abb5;
 }
 
 details[open] > :not(summary) {
