@@ -1,24 +1,21 @@
-@font-face {
-  font-family: ToshibaSat;
-  src: url(ToshibaSat.woff);
+body {
+  background-color: #0b0b0b;
+  color: #ccc;
+  font-family: DejaVu Serif, serif;
+  font-size: 18px;
 }
 
-body {
-  background-color: #000;
-  color: #aaa;
-  font-family: ToshibaSat, Courier, monospace;
-  font-size: 18px;
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #eee;
+    color: #111;
+  }
 }
 
 main {
   margin: 2em auto 10em auto;
   max-width: 90ch;
   text-align: center;
-}
-
-article {
-  max-width: 80ch;
-  text-align: left;
 }
 
 a {
@@ -32,13 +29,9 @@ a:hover {
 }
 
 nav {
-  background-color: inherit;
   font-size: 1.2em;
   padding: 0.5em 0;
-  position: sticky;
   text-align: center;
-  top: 0;
-  z-index: 10;
 }
 
 nav a {
