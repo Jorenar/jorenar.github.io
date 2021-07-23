@@ -1,8 +1,8 @@
 body {
   background-color: #151518;
   color: #ccc;
-  font-family: DejaVu Serif, serif;
-  font-size: 18px;
+  font-family: Palatino, Times, serif;
+  font-size: 20px;
 }
 
 main {
@@ -13,12 +13,12 @@ main {
 
 a {
   color: inherit;
+  text-decoration: underline dotted 1px #666;
   text-underline-offset: 3px;
-  text-decoration-style: dotted;
 }
 
 a:hover {
-  text-decoration-style: solid;
+  text-decoration: underline solid 2px;
 }
 
 nav {

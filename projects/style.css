@@ -29,6 +29,7 @@ details > * + summary::after {
   bottom: 0.3em;
   content: "[+]";
   cursor: pointer;
+  font-family: monospace;
   position: absolute;
   right: 0.15em;
 }
@@ -41,15 +42,14 @@ details[open] > * + summary::after {
   font-size: 1.5em;
 }
 
-.desc {
-  filter: brightness(0.9);
-  flex-basis: 100%;
-  font-style: italic;
-  margin: 0.5em 2em 0 1em;
-}
-
 .tech {
-  filter: brightness(0.8);
+  filter: brightness(0.7);
   font-size: 0.9em;
   margin-left: auto;
+}
+
+.desc {
+  filter: brightness(0.8);
+  flex-basis: 100%;
+  margin: 0.5em 2em 0 1em;
 }
