@@ -21,7 +21,7 @@
         <priority>0.70</priority>
     </url>
     <url>
-        <loc>https://joren.ga/resources</loc>
+        <loc>https://lab.joren.ga</loc>
         <priority>0.60</priority>
     </url>
 </urlset>
