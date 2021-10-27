@@ -37,6 +37,7 @@ nav a[data-current] {
 
 #avatar {
   max-width: 18em;
+  margin-bottom: 1em;
 }
 
 #social > div {
