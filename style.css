@@ -1,11 +1,8 @@
 body {
-  background-color: #151518;
+  background-color: #000;;
   color: #ccc;
   font-family: Palatino, Times, serif;
   font-size: 20px;
-}
-
-main {
   margin: 2em auto 10em auto;
   max-width: 90ch;
   text-align: center;
@@ -21,6 +18,11 @@ a:hover {
   text-decoration: underline solid 2px;
 }
 
+#avatar {
+  max-width: 18em;
+  margin-bottom: 1em;
+}
+
 nav {
   font-size: 1.2em;
   margin-top: 1em;
@@ -28,23 +30,5 @@ nav {
 }
 
 nav a {
-  margin: 0.5em;
-}
-
-nav a[data-current] {
-  text-decoration-style: solid;
-}
-
-#avatar {
-  max-width: 18em;
-  margin-bottom: 1em;
-}
-
-#social > div {
-  margin-bottom: 1em;
-}
-
-#social > div > a {
-  font-size: 1.2em;
   margin: 0.5em;
 }
