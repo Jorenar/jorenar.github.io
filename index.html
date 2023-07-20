@@ -9,10 +9,10 @@
   <style>
     body {
       background-color: #111;
-      font-family: Tahoma, Verdana, sans-serif;
-      font-size: 25px;
+      font-family: Times, serif;
+      font-size: 32px;
       text-align: center;
-      color: #999;
+      color: #dddd;
     }
 
     a {
@@ -25,53 +25,51 @@
       text-decoration: underline solid 2px;
     }
 
+    #me {
+      display: flex;
+      margin: 1em;
+      justify-content: center;
+    }
+
     #avatar {
       max-width: 5em;
-      margin-bottom: 1em;
-      filter: drop-shadow(0 0 3px #fff); /* Firefox sometimes omits inline style attributes for SVG */
     }
 
     #motto {
-      font-size: 0.5em;
-      color: #333;
+      font-size: 0.6em;
       white-space: pre-line;
       font-style: italic;
     }
 
-    nav a {
-      font-size: 1.2em;
+    #links a {
       margin: 0.5em;
     }
 
-    #blog iframe {
-      width: 100%;
+    #blog {
+      margin: 2em;
     }
   </style>
 </head>
 <body>
-  <img id="avatar" src="avatar.svg" alt="Jorengarenar">
-  <nav>
+  <div id="me">
+    <img id="avatar" src="avatar.svg" alt="Jorengarenar">
+    <p id="motto">
+      <b>"What language to use?"</b>
+      first try Shell
+      maybe tackle with Perl
+      eventually give C a swirl
+    </p>
+  </div>
+  <nav id="links">
     <a href="https://github.com/Jorengarenar">GitHub</a>
     <a href="https://infinitebacklog.nl/users/Jorengarenar">Infinite Backlog</a>
     <a href="https://anilist.co/user/Jorengarenar">AniList</a>
   </nav>
-  <p id="motto">
-  <b>"What language to use?"</b>
-  first try Shell
-  maybe tackle with Perl
-  eventually give C a swirl
-  </p>
-  <script>
-    function resizeIframe(obj) {
-      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-    }
-  </script>
-
   <div id="blog">
-    <b>Articles</b>
-    <iframe src="/blog" frameborder="0" onload="resizeIframe(this)" ></iframe>
-
+    <b>Articles</b> (<a href="/blog/feed.xml">RSS</a>)
+    <iframe src="/blog" width="100%" frameborder="0" sandbox="allow-same-origin"
+      onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';">
+    </iframe>
   </div>
-  <a href="/sitemap.xml"></a>
 </body>
 </html>
