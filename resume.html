@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jakub Łukasiewicz - Resume</title>
+  <meta name="author" content="Jakub Łukasiewicz">
+  <meta name="description" content='Curriculum Vitae of Jakub "Jorengarenar" Łukasiewicz'>
+  <meta name="keywords" content="cv,curriculum,vitae,resume,jakub,łukasiewicz,jorengarenar,programmer,developer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+
+    body {
+      margin: auto;
+      position: relative;
+
+      height: 29.7cm;
+      width: 21.02cm;
+
+      font-family: Arial;
+      font-size: 16px;
+    }
+
+    main, header {
+      margin: 25px;
+    }
+
+    a {
+      color: inherit;
+      font-weight: initial;
+      text-decoration: underline dashed 1px;
+      text-underline-offset: 2px;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    section > article {
+      margin-left: 5px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      align-items: baseline;
+      display: flex;
+      font-variant: small-caps;
+      justify-content: left;
+      margin-bottom: 0.2em;
+    }
+
+    h2::after {
+      border-bottom: 2px solid;
+      content: '';
+      flex: 1;
+      margin-left: 5px;
+    }
+
+    article {
+      border-top: 1px dotted #ccc;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 0.5em;
+      padding-top: 2px;
+    }
+
+    article > a {
+      font-style: italic;
+      font-size: 0.8em;
+    }
+
+    article > div {
+      flex-basis: 100%;
+      margin-top: 0.1em;
+    }
+
+    footer {
+      border-top: 1px solid;
+      padding-top: 5px;
+      font-size: 0.6em;
+      text-align: justify;
+      margin: 20px;
+      color: #333;
+      position: absolute;
+      bottom: 0;
+    }
+
+    #contact {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 0 30px;
+    }
+
+    #projects > div:first-child {
+      position: relative;
+      margin-bottom: 0.5em;
+    }
+
+    #projects > div:first-child > a {
+      position: absolute;
+      top: 3px;
+      right: 0;
+      font-size: 0.8em;
+      font-style: italic;
+      color: #444;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jakub Łukasiewicz</h1>
+    <section id="contact">
+      <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jakub-lukasiewicz/">jakub-lukasiewicz</a> </span>
+      <span><i class="fab fa-github"></i>   <a href="https://github.com/Jorengarenar">Jorengarenar</a>                     </span>
+      <span><i class="fas fa-at"></i>       <a href="mailto:jorengarenar@outlook.com">jorengarenar@outlook.com</a>         </span>
+    </section>
+  </header>
+  <main>
+    <section id="skills">
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <td><b>Complangs:&nbsp;</b></td>
+          <td>C, C++, POSIX Shell, JavaScript, HTML, CSS, Python, SQL, LaTeX</td>
+        </tr>
+        <tr>
+          <td><b>Tools:</b></td>
+          <td>Linux, Git, Make, CMake, SQLite, GDB, Vim, Valgrind, LSP, Bash, SSH, Jenkins, Jira, WSL, OpenSCAD, Docker/Podman</td>
+        </tr>
+        <tr>
+          <td><b>Languages:</b></td>
+          <td>Polish [C2], &nbsp; English [B2+]</td>
+        </tr>
+        <tr>
+          <td><b>Other:</b></td>
+          <td>open-source licenses, code standards, clean code style</td>
+        </tr>
+      </table>
+    </section>
+    <section id="experience">
+      <h2>Work experience</h2>
+      <article>
+        <b> ISO/IEC JTC1/SC22/WG14 - C</b>
+        <time>November 2021 &ndash; <i>present</i></time>
+        <div>
+          Expert
+        </div>
+      </article>
+      <article>
+        <b>Motorola Solutions, Inc.</b>
+        <time>November 2021 &ndash; <i>present</i></time>
+        <div>
+          Software engineer
+          <ul>
+            <li>test scripts for operating system of router using in-house language, Python and Perl</li>
+            <li>tools for parsing results of tests, finding and reporting critical systems crashes etc.</li>
+            <li>development and maintenance of operating system for network router</li>
+          </ul>
+        </div>
+      </article>
+      <article>
+        <b>DeCORI Sp. z o.o.</b>
+        <time>January &ndash; May 2021</time>
+        <div>
+          Website developer <small>(freelance)</small>
+          <ul>
+            <li>design, project and implementation of new home website for the company</li>
+          </ul>
+        </div>
+      </article>
+      <article>
+        <b>Stensal Inc.</b>
+        <time>August 2020</time>
+        <div>
+          Tester <small>(seasonal)</small>
+          <ul>
+            <li>finding errors within software</li>
+            <li>writing code examples with common C/C++ mistakes</li>
+            <li>preparing explanations for future users</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section id="projects">
+      <div> <h2>Sample projects</h2> </div>
+      <article class="project"> <!-- libXDGdirs -->
+        <b>libXDGdirs</b>
+        <a href="https://jorengarenar.github.io/libXDGdirs/">jorengarenar.github.io/libXDGdirs</a>
+        <div>An implementation of XDG Base Directory Specification in C</div>
+      </article>
+      <article class="project"> <!-- CHX -->
+        <b>CHX</b>
+        <a href="https://github.com/Jorengarenar/chx">github.com/Jorengarenar/chx</a>
+        <div>Terminal based hexadecimal editor</div>
+      </article>
+      <!-- <article class="project"> <!-1- SuperTux Advance -1-> -->
+      <!--   <b>SuperTux Advance</b> -->
+      <!--   <a href="https://github.com/Jorengarenar/SuperTux-Advance">github.com/Jorengarenar/SuperTux-Advance</a> -->
+      <!--   <div>A platformer game for GameBoy Advance</div> -->
+      <!-- </article> -->
+      <article class="project"> <!-- BF interpreter -->
+        <b>cobBF</b>
+        <a href="https://github.com/Jorengarenar/cobBF">github.com/Jorengarenar/cobBF</a>
+        <div>Simple interpreter for certain esoteric language written in COBOL</div>
+      </article>
+      <article class="project"> <!-- git fmt-diff -->
+        <b>git fmt-diff</b>
+        <a href="https://github.com/Jorengarenar/git-fmt-diff">github.com/Jorengarenar/git-fmt-diff</a>
+        <div>Show how lines you changed would look formatted</div>
+      </article>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <article>
+        <b>Jagiellonian University, Kraków</b>
+        <time>October 2019 &ndash; October 2023</time>
+        <div>Computer Science</div>
+      </article>
+    </section>
+    <section id="interests">
+      <h2>Interests</h2>
+      video games, electronics, cartoon/comic, pop-science
+    </section>
+  </main>
+  <footer>
+    I agree to the processing of personal data provided in this document for
+    realising the recruitment process pursuant to the Personal Data Protection
+    Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with
+    Regulation (EU) 2016/679 of the European Parliament and of the Council of
+    27 April 2016 on the protection of natural persons with regard to the
+    processing of personal data and on the free movement of such data, and
+    repealing Directive 95/46/EC (General Data Protection Regulation).
+  </footer>
+</body>
+</html>
+
+<!-- vim: set fen fdl=1: -->
