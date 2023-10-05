@@ -48,6 +48,11 @@
     #blog {
       margin: 2em;
     }
+
+    #blog iframe {
+      border: none;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -67,7 +72,7 @@
   </nav>
   <div id="blog">
     <b>Articles</b> (<a href="/blog/feed.xml">RSS</a>)
-    <iframe src="/blog" width="100%" frameborder="0"
+    <iframe src="/blog"
       onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';">
     </iframe>
   </div>
