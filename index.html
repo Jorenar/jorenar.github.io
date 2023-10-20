@@ -45,13 +45,10 @@
       margin: 0.5em;
     }
 
-    #blog {
-      margin: 2em;
-    }
-
     #blog iframe {
       border: none;
       width: 100%;
+      margin: 2em auto;
     }
   </style>
 </head>
@@ -71,7 +68,6 @@
     <a href="https://anilist.co/user/Jorengarenar">AniList</a>
   </nav>
   <div id="blog">
-    <b>Articles</b> (<a href="/blog/feed.xml">RSS</a>)
     <iframe src="/blog"
       onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';">
     </iframe>
